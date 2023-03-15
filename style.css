@@ -1,0 +1,599 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --bg-color:#1f242d;
+    --second-bg-color:#323946;
+    --text-color:#fff;
+    --main-color:#0ef;
+
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+section{
+  margin-top: 5rem;
+    min-height: 100vh;
+    padding: 10rem  10%;
+}
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background:var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.topnav {
+  overflow: hidden;
+  background-color:var(--second-bg-color);
+  border-radius: 10px;
+}
+
+.topnav a {
+  float: left;
+  display:block;  
+  color:var(--main-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  color:var(--main-color);
+}
+
+.topnav a.active {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+
+
+
+
+
+.home{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+   
+}
+
+.home_content h3{
+font-size: 2.6em;
+font-weight: 700;
+
+}
+.home_content h1{
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+   
+}
+.image img{
+    width: 35vw;
+    animation-name: Zoomin is ease forward,floatImage;
+}
+.socialmedia a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    font-size: 2rem;
+    color: var(--main-color);
+    border-radius: 50%;
+    margin: 2rem 5px;
+
+}
+.socialmedia a:hover{
+    background-color: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+.download a{
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+}
+
+
+.about{
+    display: flex;
+   
+}
+.about img{
+    width: 35vw;
+}
+.about_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+}
+.about_content h2{
+    font-size:4.6rem;
+    line-height: 1.2;
+}
+.Me{
+    color: var(--main-color);
+}
+.about_content h3{
+    font-size:3.6rem;
+    line-height: 1.2;
+}
+.about_content p{
+    font-size:1.6rem;
+    line-height: 1.2;
+
+}
+.service_container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.services h2{
+    text-align: center;
+    font-size: 4.6rem;
+}
+.services h2 span{
+    color: var(--main-color);
+}
+
+.service_box{
+    display: flex;
+    width: 350px;
+    height: 400px;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+    background:var(--second-bg-color);
+    border-radius: 2rem;
+
+}
+.service_box h3{
+    line-height: 50px;
+    font-size: 3.6rem;
+    padding-bottom: 20px;
+}
+.service_box p{
+    line-height:20px;
+    padding: 0 20px;
+    font-size: 1.6rem;
+}
+.skills h2{
+    text-align: center;
+    font-size: 4.6rem;
+    margin-bottom: 60px;
+}
+.skills h2 span{
+    color: var(--main-color);
+    
+}
+.progress_container_wrapper{
+    display: flex;
+    margin-left: 100px;
+}
+
+.progress-container {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  
+  .progress-bar {
+    width: 80%;
+    height: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .progress1 {
+    width: 70%; /* Set this to the percentage of progress you want to show */
+    height: 100%;
+    background-color:var(--main-color)
+  }
+  .progress2 {
+    width: 80%; /* Set this to the percentage of progress you want to show */
+    height: 100%;
+    background-color:var(--main-color)
+  }
+  .progress3 {
+    width: 70%; /* Set this to the percentage of progress you want to show */
+    height: 100%;
+    background-color:var(--main-color)
+  }
+  .progress4 {
+    width: 80%; /* Set this to the percentage of progress you want to show */
+    height: 100%;
+    background-color:var(--main-color)
+  }
+  
+  .progress-value {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: #000000;
+    font-weight: bolder;
+  }
+  .skillname{
+    font-size: 20px;
+  }
+
+
+
+
+
+
+.contact h2{
+    text-align: center;
+    font-size: 4.6rem;
+    margin-bottom: 60px;
+}
+.contact h2 span{
+  color: var(--main-color);
+}
+
+.contact form{
+  max-width: 70rem;
+  margin:1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}  
+.contact form .input-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contact form .input-box,
+.contact form textarea{
+  width: 100%;
+  padding: .8rem;
+  font-size: 1.6rem;
+  color: rgb(255, 253, 253);
+  background: var(--bg-color);
+  border-radius: .8rem;
+  margin: .7rem 0;
+}
+.contact form .input-box input{
+  width: 49%;
+  background-color:var(--second-bg-color);
+  color: var(--text-color);
+  padding: 1rem 0;
+  padding-left: 10px;
+  border-radius: 10px;
+  
+
+}
+.contact form textarea{
+  resize: none;
+  background-color:var(--second-bg-color);
+  margin-top: 20px;
+}
+.submit{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+ 
+  
+}
+.submit button{
+  background-color: var(--main-color);
+  padding: 10px;
+  border-radius: 10px;
+}
+.submit button:hover{
+  box-shadow: 0 0 1rem var(--main-color);
+}
+.footer{
+  background-color: var(--second-bg-color);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .bottom-details .bottom_text{
+ 
+
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-details .bottom_text span,
+.bottom-details .bottom_text a{
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.bottom-details .bottom_text a:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+.bottom-details .bottom_text a{
+  margin-right: 10px;
+}
+
+@media (max-width:1200px){
+  html{
+    font-size: 55%;
+  }
+ section{
+  padding: 2rem ;
+ }
+}
+@media(max-width:991px){
+  .header{
+    padding: 2rem 3%;
+  }
+  section{
+    padding: 10rem 2rem;
+  }
+  footer{
+    padding: 0%;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  body{
+    background: var(--bg-color);
+    color: var(--text-color);
+    
+}
+
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display:block;
+    text-align: left;
+  }
+
+  section{
+    padding-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 15rem;
+}
+.image2{
+  display: none;
+}
+
+.about_content{
+  position: relative;
+  left: 4rem;
+}
+
+.services{
+  padding-top: 5rem;
+  flex-direction: column;
+
+}
+.service_container{
+  flex-direction: column; 
+  
+}
+.service_box{
+  margin-bottom: 3rem;
+}
+.skills{
+  margin-top: 70rem;
+}
+.progress_container_wrapper{
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+}
+.progress-container {
+  display: inline-flex;
+  width: 500px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.contact{
+  margin-top: 15rem;
+}
+.input-box{
+  flex-direction: column;
+}
+.contact form .input-box input {
+  background-color: var(--second-bg-color);
+  color: var(--text-color);
+  padding: 1rem 0;
+  width: 100%;
+  margin-top: 10px;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+footer{
+  margin-top: 50rem;
+  width: 100%;
+
+}
+.bottom_text{
+  display: flex;
+  flex-direction: column;
+}
+.policy_terms{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+}
+
+@media screen and (max-width: 620px) {
+
+  body{
+    background: var(--bg-color);
+    color: var(--text-color);
+    width: 200%;
+    
+}
+
+.topnav{
+
+  width: 100%;
+ 
+}
+
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display:block;
+    text-align: left;
+  }
+
+  section{
+    padding-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 7rem;
+}
+.home{
+  margin-top: 26rem;
+}
+.image img {
+  width: 150vw;
+  padding-top: 20rem;
+  
+}
+.image2{
+  display: none;
+}
+
+.about{
+  position: relative;
+  top: 20rem;
+}
+.about_content{
+  position: relative;
+  left: 4rem;
+  top: 6rem;
+  padding-bottom: 4rem;
+  
+}
+
+.services{
+  padding-top: 5rem;
+  flex-direction: column;
+
+}
+.service_container{
+  flex-direction: column; 
+  
+}
+.service_box{
+  margin-bottom: 3rem;
+}
+.skills{
+  margin-top: 70rem;
+}
+.progress_container_wrapper{
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+}
+.progress-container {
+  display: inline-flex;
+  width: 500px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.contact{
+  margin-top: 15rem;
+}
+.input-box{
+  flex-direction: column;
+}
+.contact form .input-box input {
+  background-color: var(--second-bg-color);
+  color: var(--text-color);
+  padding: 1rem 0;
+  width: 100%;
+  margin-top: 10px;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+footer{
+  margin-top: 60rem;
+  width: 100%;
+
+
+}
+.bottom_text{
+  display: flex;
+  flex-direction: column;
+}
+.policy_terms{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+}
+
+
+
